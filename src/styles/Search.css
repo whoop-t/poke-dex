@@ -11,4 +11,19 @@
           align-items: center;
   margin-top: 40px;
 }
+
+.s_main button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  background-color: #c00d0d;
+  border-radius: 10%;
+  padding: 10px;
+  margin-left: 10px;
+  border: none;
+}
+
+.s_main button:hover {
+  cursor: pointer;
+  background-color: #8b0a0a;
+}
 /*# sourceMappingURL=Search.css.map */

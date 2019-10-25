@@ -1,3 +1,5 @@
+/*********************************************************Most is code for Pokedex, Credit https://github.com/bloodstorms/pokedex *********************/
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
 $red: #c00d0d;
@@ -271,7 +273,7 @@ body {
 }
 
 .selectDisable {
-  @include user-select(none);
+  display: none;
 }
 
 /*#border-screen::after {
@@ -793,28 +795,4 @@ border-color: transparent transparent transparent $red;
   box-shadow: 0 0 20px $red inset, 0px 0px 5px 1px darken($red, 20%);
   background-color: $dark-sun;
   @include linear-gradient($yellow, $dark-sun);
-}
-
-@media (max-width: 756px) {
-  #right,
-  #top-right1,
-  #top-right2,
-  #border-screen,
-  #screen,
-  #cross,
-  #blue-button-left,
-  #green-button-left,
-  #orange-button-left,
-  #square-button-left {
-    display: none;
-  }
-  #top-left1 {
-    box-shadow: none;
-  }
-}
-
-@media (min-width: 756px) {
-  #logo img {
-    display: none;
-  }
 }

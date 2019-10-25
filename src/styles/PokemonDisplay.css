@@ -1,3 +1,4 @@
+/*********************************************************Most is code for Pokedex, Credit https://github.com/bloodstorms/pokedex *********************/
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
 html,
 body {
@@ -259,10 +260,7 @@ body {
 }
 
 .selectDisable {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  display: none;
 }
 
 /*#border-screen::after {
@@ -886,30 +884,5 @@ border-color: transparent transparent transparent $red;
   background-color: #ff9300;
   background: -webkit-gradient(linear, left top, left bottom, from(#ffff00), to(#ff9300));
   background: linear-gradient(#ffff00, #ff9300);
-}
-
-@media (max-width: 756px) {
-  #right,
-  #top-right1,
-  #top-right2,
-  #border-screen,
-  #screen,
-  #cross,
-  #blue-button-left,
-  #green-button-left,
-  #orange-button-left,
-  #square-button-left {
-    display: none;
-  }
-  #top-left1 {
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-}
-
-@media (min-width: 756px) {
-  #logo img {
-    display: none;
-  }
 }
 /*# sourceMappingURL=PokemonDisplay.css.map */

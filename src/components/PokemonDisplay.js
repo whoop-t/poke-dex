@@ -18,17 +18,26 @@ const PokemonDisplay = (props) => {
             </div>
           </div>
           <div id="top-left2"></div>
-          <div id="logo">
-            <img src="img/pokedex/logo-pokemon.png" alt="logo pokedex" />
-          </div>
+          <div id="logo"></div>
           <div id="border-screen">
             <div id="button-top1"></div>
             <div id="button-top2"></div>
-            <div id="button-bottom" onclick="changePicturePokemon()"></div>
-            <p class="selectDisable">&equiv;&equiv;</p>
+            <div id="button-bottom" onClick={props.changePicturePokemon}></div>
+            <p className="selectDisable">&equiv;&equiv;</p>
           </div>
           <div id="screen">
-            <img class="selectDisable" src={props.details.pic} />
+            <img
+              className={`${
+                props.details.isPicButtClicked ? 'selectDisable' : ''
+              }`}
+              src={props.details.pic}
+            />
+            <img
+              className={`${
+                !props.details.isPicButtClicked ? 'selectDisable' : ''
+              }`}
+              src={props.details.pic2}
+            />
           </div>
           <div id="triangle"></div>
           <div id="blue-button-left"></div>
@@ -39,13 +48,13 @@ const PokemonDisplay = (props) => {
             <div id="mid-cross">
               <div id="mid-circle"></div>
             </div>
-            <div id="top-cross" onclick="increaseIdPokemon()">
+            <div id="top-cross" onClick={props.increaseID}>
               <div id="upC"></div>
             </div>
             <div id="right-cross">
               <div id="rightC"></div>
             </div>
-            <div id="bot-cross" onclick="decreaseIdPokemon()">
+            <div id="bot-cross" onClick={props.decreaseID}>
               <div id="downC"></div>
             </div>
             <div id="left-cross">
@@ -61,16 +70,16 @@ const PokemonDisplay = (props) => {
         <div id="right">
           <div id="info-screen">{props.details.name}</div>
           <div id="keyboard">
-            <div class="key"></div>
-            <div class="key"></div>
-            <div class="key"></div>
-            <div class="key"></div>
-            <div class="key"></div>
-            <div class="key"></div>
-            <div class="key"></div>
-            <div class="key"></div>
-            <div class="key"></div>
-            <div class="key"></div>
+            <div className="key"></div>
+            <div className="key"></div>
+            <div className="key"></div>
+            <div className="key"></div>
+            <div className="key"></div>
+            <div className="key"></div>
+            <div className="key"></div>
+            <div className="key"></div>
+            <div className="key"></div>
+            <div className="key"></div>
           </div>
           <div id="leaf-button-right"></div>
           <div id="yellow-button-right"></div>
