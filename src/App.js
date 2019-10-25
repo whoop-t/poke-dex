@@ -1,6 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 import Search from './components/Search';
+import PokemonDisplay from './components/PokemonDisplay';
+import './styles/App.css';
 
 //Set the states of the data for the pokemon to null
 class App extends React.Component {
@@ -48,15 +50,9 @@ class App extends React.Component {
   //Render the pokemon data to the screen
   render() {
     return (
-      <div>
+      <div className="main">
         <Search getPokemon={this.getPokemon} />
-        <div>{this.state.name}</div>
-        <div>{this.state.type}</div>
-        <div>{this.state.type2}</div>
-        <div>
-          <img src={this.state.pic} alt="" />
-        </div>
-        <div>{this.state.id}</div>
+        <PokemonDisplay details={this.state} />
       </div>
     );
   }

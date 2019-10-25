@@ -1,0 +1,17 @@
+//Set border box
+
+html {
+  background: #e84848;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+//Add pokedex image to main div
+.main {
+  box-sizing: border-box;
+  height: 100vh;
+  background: url(../pictures/pokedex.jpg) no-repeat center center;
+  background-size: 50%;
+}

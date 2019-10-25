@@ -1,0 +1,9 @@
+.pd_main {
+  display: -ms-grid;
+  display: grid;
+}
+
+.pd_main .pd_img {
+  height: 200px;
+}
+/*# sourceMappingURL=PokemonDisplay.css.map */
