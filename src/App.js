@@ -36,13 +36,20 @@ class App extends React.Component {
           this.setState({
             name: res.data.name,
             type: res.data.types[0].type.name,
-            type2: null,
+            type2: 'N/A',
             pic: res.data.sprites.front_default,
             id: res.data.id
           });
         }
       })
       .catch((err) => {
+        this.setState({
+          name: 'No Match',
+          type: null,
+          type2: null,
+          pic: null,
+          id: null
+        });
         console.log('You don goofed');
       });
   };
@@ -51,8 +58,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="main">
-        <Search getPokemon={this.getPokemon} />
         <PokemonDisplay details={this.state} />
+        <Search getPokemon={this.getPokemon} />
       </div>
     );
   }

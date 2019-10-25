@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
 html,
 body {
+  font-family: 'Roboto', sans-serif;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -414,6 +416,15 @@ border-color: transparent transparent transparent $red;
 }
 
 #square-button-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   z-index: 130;
   margin: 430px auto auto 100px;
@@ -581,7 +592,6 @@ border-color: transparent transparent transparent $red;
   -webkit-box-shadow: 0 0 20px #137604 inset, 0px 0px 5px 1px #600707;
           box-shadow: 0 0 20px #137604 inset, 0px 0px 5px 1px #600707;
   background-color: #30da0c;
-  font-family: 'digital_dream';
   color: #0f5d03;
   font-size: 1.2em;
   background: -webkit-gradient(linear, left top, left bottom, from(#acfb76), to(#30da0c));
@@ -833,6 +843,15 @@ border-color: transparent transparent transparent $red;
 }
 
 #square-button-right1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   z-index: 130;
   margin: 375px auto auto 185px;
@@ -847,6 +866,15 @@ border-color: transparent transparent transparent $red;
 }
 
 #square-button-right2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   z-index: 130;
   margin: 375px auto auto 70px;

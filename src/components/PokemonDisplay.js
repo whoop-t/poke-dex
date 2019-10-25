@@ -34,7 +34,7 @@ const PokemonDisplay = (props) => {
           <div id="blue-button-left"></div>
           <div id="green-button-left"></div>
           <div id="orange-button-left"></div>
-          <div id="square-button-left">{props.details.id}</div>
+          <div id="square-button-left">Id: {props.details.id}</div>
           <div id="cross">
             <div id="mid-cross">
               <div id="mid-circle"></div>

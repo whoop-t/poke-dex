@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
 $red: #c00d0d;
 $light-red: #fb7575;
 $dark-red: #600707;
@@ -38,6 +40,7 @@ $dark-black: #111111;
 
 html,
 body {
+  font-family: 'Roboto', sans-serif;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -403,6 +406,9 @@ border-color: transparent transparent transparent $red;
 }
 
 #square-button-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   z-index: 130;
   margin: 430px auto auto 100px;
@@ -555,7 +561,6 @@ border-color: transparent transparent transparent $red;
   width: 290px;
   box-shadow: 0 0 20px $dark-green inset, 0px 0px 5px 1px darken($red, 20%);
   background-color: $green;
-  font-family: 'digital_dream';
   color: darken($dark-green, 5%);
   font-size: 1.2em;
   @include linear-gradient($light-green, $green);
@@ -761,6 +766,9 @@ border-color: transparent transparent transparent $red;
 }
 
 #square-button-right1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   z-index: 130;
   margin: 375px auto auto 185px;
@@ -773,6 +781,9 @@ border-color: transparent transparent transparent $red;
 }
 
 #square-button-right2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   z-index: 130;
   margin: 375px auto auto 70px;
