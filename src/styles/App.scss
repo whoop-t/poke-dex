@@ -2,6 +2,7 @@
 
 html {
   background: #e84848;
+  box-sizing: border-box;
 }
 *,
 *:before,
@@ -10,8 +11,4 @@ html {
 }
 //Add pokedex image to main div
 .main {
-  box-sizing: border-box;
-  height: 100vh;
-  background: url(../pictures/pokedex.jpg) no-repeat center center;
-  background-size: 50%;
 }
