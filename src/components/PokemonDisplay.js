@@ -31,12 +31,14 @@ const PokemonDisplay = (props) => {
                 props.details.isPicButtClicked ? 'selectDisable' : ''
               }`}
               src={props.details.pic}
+              alt={props.details.id}
             />
             <img
               className={`${
                 !props.details.isPicButtClicked ? 'selectDisable' : ''
               }`}
               src={props.details.pic2}
+              alt={props.details.id}
             />
           </div>
           <div id="triangle"></div>
