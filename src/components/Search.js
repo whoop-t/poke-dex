@@ -9,6 +9,7 @@ const Search = (props) => {
         <input type="text" name="pokemon" />
         <button>Submit</button>
       </form>
+      <div style={{marginLeft: '10px'}}>Search by pokemon name or id #</div>
     </div>
   );
 };
